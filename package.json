@@ -1,0 +1,25 @@
+{
+  "name": "ms-starwars",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "develop": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mocha": "^6.2.2",
+    "nodemon": "^1.19.4",
+    "prettier": "^1.18.2",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "sinon": "^7.5.0"
+  }
+}
