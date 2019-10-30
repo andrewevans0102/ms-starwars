@@ -2,13 +2,11 @@ const swapi = require('../apis/swapi');
 const util = require('../helpers/util');
 const wrapper = require('../helpers/wrapper');
 
-const controllers = {};
-
 /**
  * controller for all films route
  * @return {Promise}
  */
-controllers.filmList = async () => {
+const filmList = async () => {
   const swapiResponse = await swapi.films();
   const filmList = [];
   swapiResponse.forEach(responseFilm => {
@@ -32,7 +30,7 @@ controllers.filmList = async () => {
  * @param  {string}  filmId
  * @return {Promise}
  */
-controllers.film = async filmId => {
+const film = async filmId => {
   const swapiResponse = await swapi.film(filmId);
   let {
     characters,
@@ -82,7 +80,7 @@ controllers.film = async filmId => {
  * @param  {string}  peopleId
  * @return {Promise}
  */
-controllers.people = async peopleId => {
+const people = async peopleId => {
   const swapiResponse = await swapi.people(peopleId);
   let { films, species, vehicles, starships, url, ...person } = swapiResponse;
   person.films = [];
@@ -117,7 +115,7 @@ controllers.people = async peopleId => {
  * @param  {string}  planetId
  * @return {Promise}
  */
-controllers.planets = async planetId => {
+planets = async planetId => {
   const swapiResponse = await swapi.planet(planetId);
   let { residents, films, url, ...planet } = swapiResponse;
   planet.residents = [];
@@ -142,7 +140,7 @@ controllers.planets = async planetId => {
  * @param  {string}  starshipId
  * @return {Promise}
  */
-controllers.starship = async starshipId => {
+const starship = async starshipId => {
   const swapiResponse = await swapi.starship(starshipId);
   let { films, pilots, url, ...starship } = swapiResponse;
   starship.pilots = [];
@@ -165,7 +163,7 @@ controllers.starship = async starshipId => {
  * @param  {string}  vehicleId
  * @return {Promise}
  */
-controllers.vehicles = async vehicleId => {
+const vehicles = async vehicleId => {
   const swapiResponse = await swapi.vehicle(vehicleId);
   let { pilots, films, url, ...vehicle } = swapiResponse;
   vehicle.pilots = [];
@@ -188,7 +186,7 @@ controllers.vehicles = async vehicleId => {
  * @param  {string}  speciesId
  * @return {Promise}
  */
-controllers.species = async speciesId => {
+const species = async speciesId => {
   const swapiResponse = await swapi.species(speciesId);
   let { people, films, homeworld, url, ...species } = swapiResponse;
   species.people = [];
@@ -219,4 +217,12 @@ controllers.species = async speciesId => {
   return species;
 };
 
-module.exports = controllers;
+module.exports = {
+  filmList,
+  film,
+  people,
+  planets,
+  starship,
+  vehicles,
+  species
+};

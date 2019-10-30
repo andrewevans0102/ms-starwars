@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "develop": "nodemon server.js"
+    "develop": "nodemon server.js",
+    "unit-tests": "mocha test/unit.js",
+    "integration-tests": "mocha --exit test/integration.js"
   },
   "keywords": [],
   "author": "",
