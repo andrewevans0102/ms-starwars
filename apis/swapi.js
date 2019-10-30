@@ -1,10 +1,6 @@
 const rp = require('request-promise');
 
 /**
- * for all API endpoints please refer to https://swapi.co/
- */
-
-/**
  * return all of the films
  * https://swapi.co/documentation#films
  */
@@ -20,7 +16,7 @@ const films = async () => {
 
 /**
  * return a specific film
- * @param {*} filmId
+ * @param {string} filmId
  */
 const film = async filmId => {
   const options = {
@@ -33,7 +29,7 @@ const film = async filmId => {
 
 /**
  * return a specific person
- * @param {*} peopleId
+ * @param {string} peopleId
  */
 const people = async peopleId => {
   const options = {
@@ -46,7 +42,7 @@ const people = async peopleId => {
 
 /**
  * return a specific planet
- * @param {*} planetId
+ * @param {string} planetId
  */
 const planet = async planetId => {
   const options = {
@@ -59,7 +55,7 @@ const planet = async planetId => {
 
 /**
  * return a specific species
- * @param {*} speciesId
+ * @param {string} speciesId
  */
 const species = async speciesId => {
   const options = {
@@ -72,7 +68,7 @@ const species = async speciesId => {
 
 /**
  * return a specific vehicle
- * @param {*} vehicleId
+ * @param {string} vehicleId
  */
 const vehicle = async vehicleId => {
   const options = {
@@ -85,7 +81,7 @@ const vehicle = async vehicleId => {
 
 /**
  * return a specific starship
- * @param {*} starshipId
+ * @param {string} starshipId
  */
 const starship = async starshipId => {
   const options = {
