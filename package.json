@@ -7,7 +7,7 @@
     "start": "node server.js",
     "develop": "nodemon server.js",
     "unit-tests": "mocha test/unit.js",
-    "integration-tests": "mocha --exit test/integration.js"
+    "integration-tests": "mocha --timeout 40000 --exit test/integration.js"
   },
   "keywords": [],
   "author": "",
