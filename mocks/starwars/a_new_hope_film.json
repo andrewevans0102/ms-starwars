@@ -1,0 +1,172 @@
+{
+  "title": "A New Hope",
+  "episode_id": 4,
+  "opening_crawl": "It is a period of civil war.\r\nRebel spaceships, striking\r\nfrom a hidden base, have won\r\ntheir first victory against\r\nthe evil Galactic Empire.\r\n\r\nDuring the battle, Rebel\r\nspies managed to steal secret\r\nplans to the Empire's\r\nultimate weapon, the DEATH\r\nSTAR, an armored space\r\nstation with enough power\r\nto destroy an entire planet.\r\n\r\nPursued by the Empire's\r\nsinister agents, Princess\r\nLeia races home aboard her\r\nstarship, custodian of the\r\nstolen plans that can save her\r\npeople and restore\r\nfreedom to the galaxy....",
+  "director": "George Lucas",
+  "producer": "Gary Kurtz, Rick McCallum",
+  "release_date": "1977-05-25",
+  "created": "2014-12-10T14:23:31.880000Z",
+  "edited": "2015-04-11T09:46:52.774897Z",
+  "characters": [
+    {
+      "name": "Luke Skywalker",
+      "id": "1"
+    },
+    {
+      "name": "Obi-Wan Kenobi",
+      "id": "10"
+    },
+    {
+      "name": "Wilhuff Tarkin",
+      "id": "12"
+    },
+    {
+      "name": "Chewbacca",
+      "id": "13"
+    },
+    {
+      "name": "Han Solo",
+      "id": "14"
+    },
+    {
+      "name": "Greedo",
+      "id": "15"
+    },
+    {
+      "name": "Jabba Desilijic Tiure",
+      "id": "16"
+    },
+    {
+      "name": "Wedge Antilles",
+      "id": "18"
+    },
+    {
+      "name": "Jek Tono Porkins",
+      "id": "19"
+    },
+    {
+      "name": "C-3PO",
+      "id": "2"
+    },
+    {
+      "name": "R2-D2",
+      "id": "3"
+    },
+    {
+      "name": "Darth Vader",
+      "id": "4"
+    },
+    {
+      "name": "Leia Organa",
+      "id": "5"
+    },
+    {
+      "name": "Owen Lars",
+      "id": "6"
+    },
+    {
+      "name": "Beru Whitesun lars",
+      "id": "7"
+    },
+    {
+      "name": "R5-D4",
+      "id": "8"
+    },
+    {
+      "name": "Raymus Antilles",
+      "id": "81"
+    },
+    {
+      "name": "Biggs Darklighter",
+      "id": "9"
+    }
+  ],
+  "planets": [
+    {
+      "name": "Tatooine",
+      "id": "1"
+    },
+    {
+      "name": "Alderaan",
+      "id": "2"
+    },
+    {
+      "name": "Yavin IV",
+      "id": "3"
+    }
+  ],
+  "starships": [
+    {
+      "name": "Millennium Falcon",
+      "id": "10"
+    },
+    {
+      "name": "Y-wing",
+      "id": "11"
+    },
+    {
+      "name": "X-wing",
+      "id": "12"
+    },
+    {
+      "name": "TIE Advanced x1",
+      "id": "13"
+    },
+    {
+      "name": "CR90 corvette",
+      "id": "2"
+    },
+    {
+      "name": "Star Destroyer",
+      "id": "3"
+    },
+    {
+      "name": "Sentinel-class landing craft",
+      "id": "5"
+    },
+    {
+      "name": "Death Star",
+      "id": "9"
+    }
+  ],
+  "vehicles": [
+    {
+      "name": "Sand Crawler",
+      "id": "4"
+    },
+    {
+      "name": "T-16 skyhopper",
+      "id": "6"
+    },
+    {
+      "name": "X-34 landspeeder",
+      "id": "7"
+    },
+    {
+      "name": "TIE/LN starfighter",
+      "id": "8"
+    }
+  ],
+  "species": [
+    {
+      "name": "Human",
+      "id": "1"
+    },
+    {
+      "name": "Droid",
+      "id": "2"
+    },
+    {
+      "name": "Wookiee",
+      "id": "3"
+    },
+    {
+      "name": "Rodian",
+      "id": "4"
+    },
+    {
+      "name": "Hutt",
+      "id": "5"
+    }
+  ]
+}

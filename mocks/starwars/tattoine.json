@@ -1,0 +1,77 @@
+{
+  "name": "Tatooine",
+  "rotation_period": "23",
+  "orbital_period": "304",
+  "diameter": "10465",
+  "climate": "arid",
+  "gravity": "1 standard",
+  "terrain": "desert",
+  "surface_water": "1",
+  "population": "200000",
+  "created": "2014-12-09T13:50:49.641000Z",
+  "edited": "2014-12-21T20:48:04.175778Z",
+  "residents": [
+    {
+      "name": "Luke Skywalker",
+      "id": "1"
+    },
+    {
+      "name": "Anakin Skywalker",
+      "id": "11"
+    },
+    {
+      "name": "C-3PO",
+      "id": "2"
+    },
+    {
+      "name": "Darth Vader",
+      "id": "4"
+    },
+    {
+      "name": "Shmi Skywalker",
+      "id": "43"
+    },
+    {
+      "name": "Owen Lars",
+      "id": "6"
+    },
+    {
+      "name": "Cliegg Lars",
+      "id": "62"
+    },
+    {
+      "name": "Beru Whitesun lars",
+      "id": "7"
+    },
+    {
+      "name": "R5-D4",
+      "id": "8"
+    },
+    {
+      "name": "Biggs Darklighter",
+      "id": "9"
+    }
+  ],
+  "films": [
+    {
+      "title": "A New Hope",
+      "id": "1"
+    },
+    {
+      "title": "Return of the Jedi",
+      "id": "3"
+    },
+    {
+      "title": "The Phantom Menace",
+      "id": "4"
+    },
+    {
+      "title": "Attack of the Clones",
+      "id": "5"
+    },
+    {
+      "title": "Revenge of the Sith",
+      "id": "6"
+    }
+  ]
+}

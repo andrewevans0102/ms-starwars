@@ -1,0 +1,32 @@
+{
+  "name": "CR90 corvette",
+  "model": "CR90 corvette",
+  "manufacturer": "Corellian Engineering Corporation",
+  "cost_in_credits": "3500000",
+  "length": "150",
+  "max_atmosphering_speed": "950",
+  "crew": "165",
+  "passengers": "600",
+  "cargo_capacity": "3000000",
+  "consumables": "1 year",
+  "hyperdrive_rating": "2.0",
+  "MGLT": "60",
+  "starship_class": "corvette",
+  "created": "2014-12-10T14:20:33.369000Z",
+  "edited": "2014-12-22T17:35:45.408368Z",
+  "pilots": [],
+  "films": [
+    {
+      "title": "A New Hope",
+      "id": "1"
+    },
+    {
+      "title": "Return of the Jedi",
+      "id": "3"
+    },
+    {
+      "title": "Revenge of the Sith",
+      "id": "6"
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "name": "Human",
+  "classification": "mammal",
+  "designation": "sentient",
+  "average_height": "180",
+  "skin_colors": "caucasian, black, asian, hispanic",
+  "hair_colors": "blonde, brown, black, red",
+  "eye_colors": "brown, blue, green, hazel, grey, amber",
+  "average_lifespan": "120",
+  "language": "Galactic Basic",
+  "created": "2014-12-10T13:52:11.567000Z",
+  "edited": "2015-04-17T06:59:55.850671Z",
+  "people": [
+    {
+      "name": "Luke Skywalker",
+      "id": "1"
+    },
+    {
+      "name": "Obi-Wan Kenobi",
+      "id": "10"
+    },
+    {
+      "name": "Anakin Skywalker",
+      "id": "11"
+    },
+    {
+      "name": "Wilhuff Tarkin",
+      "id": "12"
+    },
+    {
+      "name": "Han Solo",
+      "id": "14"
+    },
+    {
+      "name": "Wedge Antilles",
+      "id": "18"
+    },
+    {
+      "name": "Jek Tono Porkins",
+      "id": "19"
+    },
+    {
+      "name": "Palpatine",
+      "id": "21"
+    },
+    {
+      "name": "Boba Fett",
+      "id": "22"
+    },
+    {
+      "name": "Lando Calrissian",
+      "id": "25"
+    },
+    {
+      "name": "Lobot",
+      "id": "26"
+    },
+    {
+      "name": "Mon Mothma",
+      "id": "28"
+    },
+    {
+      "name": "Arvel Crynyd",
+      "id": "29"
+    },
+    {
+      "name": "Qui-Gon Jinn",
+      "id": "32"
+    },
+    {
+      "name": "Finis Valorum",
+      "id": "34"
+    },
+    {
+      "name": "Padmé Amidala",
+      "id": "35"
+    },
+    {
+      "name": "Darth Vader",
+      "id": "4"
+    },
+    {
+      "name": "Shmi Skywalker",
+      "id": "43"
+    },
+    {
+      "name": "Leia Organa",
+      "id": "5"
+    },
+    {
+      "name": "Mace Windu",
+      "id": "51"
+    },
+    {
+      "name": "Owen Lars",
+      "id": "6"
+    },
+    {
+      "name": "Gregar Typho",
+      "id": "60"
+    },
+    {
+      "name": "Cordé",
+      "id": "61"
+    },
+    {
+      "name": "Cliegg Lars",
+      "id": "62"
+    },
+    {
+      "name": "Dormé",
+      "id": "66"
+    },
+    {
+      "name": "Dooku",
+      "id": "67"
+    },
+    {
+      "name": "Bail Prestor Organa",
+      "id": "68"
+    },
+    {
+      "name": "Jango Fett",
+      "id": "69"
+    },
+    {
+      "name": "Beru Whitesun lars",
+      "id": "7"
+    },
+    {
+      "name": "Jocasta Nu",
+      "id": "74"
+    },
+    {
+      "name": "Raymus Antilles",
+      "id": "81"
+    },
+    {
+      "name": "Finn",
+      "id": "84"
+    },
+    {
+      "name": "Rey",
+      "id": "85"
+    },
+    {
+      "name": "Poe Dameron",
+      "id": "86"
+    },
+    {
+      "name": "Biggs Darklighter",
+      "id": "9"
+    }
+  ],
+  "films": [
+    {
+      "title": "A New Hope",
+      "id": "1"
+    },
+    {
+      "title": "The Empire Strikes Back",
+      "id": "2"
+    },
+    {
+      "title": "Return of the Jedi",
+      "id": "3"
+    },
+    {
+      "title": "The Phantom Menace",
+      "id": "4"
+    },
+    {
+      "title": "Attack of the Clones",
+      "id": "5"
+    },
+    {
+      "title": "Revenge of the Sith",
+      "id": "6"
+    },
+    {
+      "title": "The Force Awakens",
+      "id": "7"
+    }
+  ],
+  "homeworld": {
+    "name": "Coruscant",
+    "id": "9"
+  }
+}

@@ -6,13 +6,12 @@ const should = chai.should();
 const expect = chai.expect;
 // starwars mocks
 const starwarsFilmListMock = require('../mocks/starwars/film_list.json');
-
-// const metroStationListMock = require('../mocks/metro/station-list.json');
-// const metroStationInformationMock = require('../mocks/metro/station-information.json');
-// const metroStationHoursMock = require('../mocks/metro/station-hours.json');
-// const metroArrivalTimesMock = require('../mocks/metro/arrival-times.json');
-// const metroArrivalTimesC02Mock = require('../mocks/metro/C02-times.json');
-// const metroStationRouteMock = require('../mocks/metro/station-route.json');
+const starwarsANewHopeFilmMock = require('../mocks/starwars/a_new_hope_film.json');
+const starwarsLukeSkywalkerPeopleMock = require('../mocks/starwars/luke_skywalker.json');
+const starwarsTattoinePlanetMock = require('../mocks/starwars/tattoine.json');
+const starwarsStarshipMock = require('../mocks/starwars/cr90_corvette.json');
+const starwarsVehicleMock = require('../mocks/starwars/sand_crawler.json');
+const starwarsSpeciesMock = require('../mocks/starwars/human.json');
 
 describe('GET /films-list', () => {
   it('should return a list of films when called', done => {
@@ -27,53 +26,86 @@ describe('GET /films-list', () => {
   });
 });
 
-// describe('GET /film/:episode', () => {
+describe('GET /film/:episode', () => {
+  it('should return film information for A New Hope Episode 4 when called', done => {
+    const episode = '4';
+    chai
+      .request(app)
+      .get('/film/' + episode)
+      .end((err, res) => {
+        res.should.have.status(200);
+        expect(res.body).to.deep.equal(starwarsANewHopeFilmMock);
+        done();
+      });
+  });
+});
 
-// });
+describe('GET /people/:id', () => {
+  it('should return people information for Luke Skywalker when called', done => {
+    const peopleId = '1';
+    chai
+      .request(app)
+      .get('/people/' + peopleId)
+      .end((err, res) => {
+        res.should.have.status(200);
+        expect(res.body).to.deep.equal(starwarsLukeSkywalkerPeopleMock);
+        done();
+      });
+  });
+});
 
-// describe('GET /people/:id', () => {
+describe('GET /planet/:id', () => {
+  it('should return planet information for Tattoine when called', done => {
+    const planetId = '1';
+    chai
+      .request(app)
+      .get('/planet/' + planetId)
+      .end((err, res) => {
+        res.should.have.status(200);
+        expect(res.body).to.deep.equal(starwarsTattoinePlanetMock);
+        done();
+      });
+  });
+});
 
-// });
+describe('GET /starship/:id', () => {
+  it('should return starship information when called', done => {
+    const starshipId = '2';
+    chai
+      .request(app)
+      .get('/starship/' + starshipId)
+      .end((err, res) => {
+        res.should.have.status(200);
+        expect(res.body).to.deep.equal(starwarsStarshipMock);
+        done();
+      });
+  });
+});
 
-// describe('GET /planet/:id', () => {
+describe('GET /vehicle/:id', () => {
+  it('should return vehicle information when called', done => {
+    const vehicleId = '4';
+    chai
+      .request(app)
+      .get('/vehicle/' + vehicleId)
+      .end((err, res) => {
+        res.should.have.status(200);
+        expect(res.body).to.deep.equal(starwarsVehicleMock);
+        done();
+      });
+  });
+});
 
-// });
-
-// describe('GET /starship/:id', () => {
-
-// });
-
-// describe('GET /vehicle/:id', () => {
-
-// });
-
-// describe('GET /species/:id', () => {
-
-// });
-
-//   it('should return silver line station list when called with line code SV', done => {
-//     chai
-//       .request(app)
-//       .get('/station-list?LineCode=SV')
-//       .end((err, res) => {
-//         res.should.have.status(200);
-//         expect(res.body).to.deep.equal(metroStationListMock);
-//         done();
-//       });
-//   });
-
-//   it('should return a 500 and error message when called with invalid line code', done => {
-//     chai
-//       .request(app)
-//       .get('/station-list?LineCode=CHEWBACCA')
-//       .end((err, res) => {
-//         // error is just to signify to http chai to close the test here
-//         // https://www.chaijs.com/plugins/chai-http/
-//         res.should.have.status(500);
-//         expect(res.error.text).to.deep.equal(
-//           'LineCode must be RD, BL, YL, OR, GR, or SV'
-//         );
-//         done();
-//       });
-//   });
-// });
+describe('GET /species/:id', () => {
+  it('should return species information when called', done => {
+    const speciesId = '1';
+    chai
+      .request(app)
+      .get('/species/' + speciesId)
+      .end((err, res) => {
+        res.should.have.status(200);
+        expect(res.body).to.deep.equal(starwarsSpeciesMock);
+        done();
+      });
+  });
+});

@@ -72,6 +72,56 @@ const film = async filmId => {
   });
   await Promise.all(promises);
 
+  film.characters.sort((x, y) => {
+    if (x.id < y.id) {
+      return -1;
+    }
+    if (x.id > y.id) {
+      return 1;
+    }
+    return 0;
+  });
+
+  film.planets.sort((x, y) => {
+    if (x.id < y.id) {
+      return -1;
+    }
+    if (x.id > y.id) {
+      return 1;
+    }
+    return 0;
+  });
+
+  film.starships.sort((x, y) => {
+    if (x.id < y.id) {
+      return -1;
+    }
+    if (x.id > y.id) {
+      return 1;
+    }
+    return 0;
+  });
+
+  film.vehicles.sort((x, y) => {
+    if (x.id < y.id) {
+      return -1;
+    }
+    if (x.id > y.id) {
+      return 1;
+    }
+    return 0;
+  });
+
+  film.species.sort((x, y) => {
+    if (x.id < y.id) {
+      return -1;
+    }
+    if (x.id > y.id) {
+      return 1;
+    }
+    return 0;
+  });
+
   return film;
 };
 
@@ -107,6 +157,46 @@ const people = async peopleId => {
   });
   await Promise.all(promises);
 
+  person.films.sort((x, y) => {
+    if (x.id < y.id) {
+      return -1;
+    }
+    if (x.id > y.id) {
+      return 1;
+    }
+    return 0;
+  });
+
+  person.species.sort((x, y) => {
+    if (x.id < y.id) {
+      return -1;
+    }
+    if (x.id > y.id) {
+      return 1;
+    }
+    return 0;
+  });
+
+  person.vehicles.sort((x, y) => {
+    if (x.id < y.id) {
+      return -1;
+    }
+    if (x.id > y.id) {
+      return 1;
+    }
+    return 0;
+  });
+
+  person.starships.sort((x, y) => {
+    if (x.id < y.id) {
+      return -1;
+    }
+    if (x.id > y.id) {
+      return 1;
+    }
+    return 0;
+  });
+
   return person;
 };
 
@@ -132,6 +222,26 @@ planets = async planetId => {
   });
   await Promise.all(promises);
 
+  planet.residents.sort((x, y) => {
+    if (x.id < y.id) {
+      return -1;
+    }
+    if (x.id > y.id) {
+      return 1;
+    }
+    return 0;
+  });
+
+  planet.films.sort((x, y) => {
+    if (x.id < y.id) {
+      return -1;
+    }
+    if (x.id > y.id) {
+      return 1;
+    }
+    return 0;
+  });
+
   return planet;
 };
 
@@ -155,6 +265,26 @@ const starship = async starshipId => {
   });
   await Promise.all(promises);
 
+  starship.films.sort((x, y) => {
+    if (x.id < y.id) {
+      return -1;
+    }
+    if (x.id > y.id) {
+      return 1;
+    }
+    return 0;
+  });
+
+  starship.pilots.sort((x, y) => {
+    if (x.id < y.id) {
+      return -1;
+    }
+    if (x.id > y.id) {
+      return 1;
+    }
+    return 0;
+  });
+
   return starship;
 };
 
@@ -177,6 +307,26 @@ const vehicles = async vehicleId => {
     wrapper.films(filmsUrl, promises, vehicle.films);
   });
   await Promise.all(promises);
+
+  vehicle.pilots.sort((x, y) => {
+    if (x.id < y.id) {
+      return -1;
+    }
+    if (x.id > y.id) {
+      return 1;
+    }
+    return 0;
+  });
+
+  vehicle.films.sort((x, y) => {
+    if (x.id < y.id) {
+      return -1;
+    }
+    if (x.id > y.id) {
+      return 1;
+    }
+    return 0;
+  });
 
   return vehicle;
 };
@@ -213,6 +363,26 @@ const species = async speciesId => {
     wrapper.films(filmsUrl, promises, species.films);
   });
   await Promise.all(promises);
+
+  species.people.sort((x, y) => {
+    if (x.id < y.id) {
+      return -1;
+    }
+    if (x.id > y.id) {
+      return 1;
+    }
+    return 0;
+  });
+
+  species.films.sort((x, y) => {
+    if (x.id < y.id) {
+      return -1;
+    }
+    if (x.id > y.id) {
+      return 1;
+    }
+    return 0;
+  });
 
   return species;
 };

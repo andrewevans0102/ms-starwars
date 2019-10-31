@@ -1,0 +1,61 @@
+{
+  "name": "Luke Skywalker",
+  "height": "172",
+  "mass": "77",
+  "hair_color": "blond",
+  "skin_color": "fair",
+  "eye_color": "blue",
+  "birth_year": "19BBY",
+  "gender": "male",
+  "homeworld": "https://swapi.co/api/planets/1/",
+  "created": "2014-12-09T13:50:51.644000Z",
+  "edited": "2014-12-20T21:17:56.891000Z",
+  "films": [
+    {
+      "title": "A New Hope",
+      "id": "1"
+    },
+    {
+      "title": "The Empire Strikes Back",
+      "id": "2"
+    },
+    {
+      "title": "Return of the Jedi",
+      "id": "3"
+    },
+    {
+      "title": "Revenge of the Sith",
+      "id": "6"
+    },
+    {
+      "title": "The Force Awakens",
+      "id": "7"
+    }
+  ],
+  "species": [
+    {
+      "name": "Human",
+      "id": "1"
+    }
+  ],
+  "vehicles": [
+    {
+      "name": "Snowspeeder",
+      "id": "14"
+    },
+    {
+      "name": "Imperial Speeder Bike",
+      "id": "30"
+    }
+  ],
+  "starships": [
+    {
+      "name": "X-wing",
+      "id": "12"
+    },
+    {
+      "name": "Imperial shuttle",
+      "id": "22"
+    }
+  ]
+}
