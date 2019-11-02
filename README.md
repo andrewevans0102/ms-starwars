@@ -20,6 +20,8 @@ The SWAPI is a great resource for Star Wars information. SWAPI provides endpoint
 
 This project enables you to make one call to any of these endpoints, and then goes ahead and makes calls to the associated urls for you.
 
+> Note that currently all that is returned from calls to the associated urls is the `name` and `id` of the value returned
+
 The goal is to have all associated data in one call. Rather than having to walk through the API etc.
 
 ## routes
@@ -64,3 +66,4 @@ This project uses [flat-cache](https://www.npmjs.com/package/flat-cache) for loc
 - improve testing
 - implement more robust cache mechanism
 - provide better overall docs
+- increase the amount of information returned from the bundled calls (currently only returns the `name and id`)
