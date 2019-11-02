@@ -7,7 +7,8 @@
     "start": "node server.js",
     "develop": "nodemon server.js",
     "unit-tests": "mocha test/unit.js",
-    "integration-tests": "mocha --timeout 40000 --exit test/integration.js"
+    "integration-tests": "mocha --timeout 40000 --exit test/integration.js",
+    "mocha": "npm run mocha"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +18,7 @@
     "chai-http": "^4.3.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "flat-cache": "^2.0.1",
     "mocha": "^6.2.2",
     "nodemon": "^1.19.4",
     "prettier": "^1.18.2",

@@ -6,6 +6,8 @@ const cors = require('cors');
 app.use(cors({ origin: true }));
 const util = require('./helpers/util');
 const starwars = require('./controllers/starwars');
+const flatCache = require('flat-cache');
+let cache = flatCache.load('starwarsCache', './cache');
 
 /**
  * middleware to log requests
@@ -20,6 +22,34 @@ const requestTime = function(req, res, next) {
   next();
 };
 app.use(requestTime);
+
+/**
+ * middleware to cache responses
+ * code taken from scotch.io tutorial here
+ * https://scotch.io/tutorials/how-to-optimize-node-requests-with-simple-caching-strategies
+ * Additionally, this method does not update the cache file (notice the true value being passed to the save call).
+ * This is fine since the data does not change frequently.
+ * A good future improvement would be to build in a cache refresh here.
+ * @param {object} req
+ * @param {object} res
+ * @param {function} next
+ */
+let cacheMiddleware = (req, res, next) => {
+  let key = '__express__' + req.url;
+  let cacheContent = cache.getKey(key);
+  if (cacheContent) {
+    res.send(JSON.parse(cacheContent));
+  } else {
+    res.sendResponse = res.send;
+    res.send = body => {
+      cache.setKey(key, body);
+      cache.save(true);
+      res.sendResponse(body);
+    };
+    next();
+  }
+};
+app.use(cacheMiddleware);
 
 /**
  * Passthrough to the films route in SWAPI.
