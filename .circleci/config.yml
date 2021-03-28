@@ -6,6 +6,9 @@ orbs:
   node: circleci/node@4.2.0
 jobs:
   unit-tests:
+    executor:
+      name: node/default
+      tag: '13.14'
     steps:
       - checkout
       - node/install-packages
