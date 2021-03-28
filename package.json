@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "develop": "nodemon server.js",
-    "unit-tests": "mocha test/unit.js",
-    "integration-tests": "mocha --timeout 40000 --exit test/integration.js",
+    "unitTests": "mocha test/unit.js",
+    "integrationTests": "mocha --timeout 40000 --exit test/integration.js",
     "mocha": "npm run mocha"
   },
   "keywords": [],
