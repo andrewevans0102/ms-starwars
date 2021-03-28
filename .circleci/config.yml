@@ -10,4 +10,4 @@ workflows:
   unit-tests:
     # Run the welcome/run job in its own container
     jobs:
-      - node/unit-tests
+      - node/unit-tests.js
