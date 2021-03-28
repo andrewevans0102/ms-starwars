@@ -11,7 +11,6 @@ jobs:
       tag: '13.14'
     steps:
       - checkout
-      - node/install-packages
       - run:
         command: npm run unit-tests
 # Orchestrate or schedule a set of jobs
