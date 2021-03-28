@@ -12,6 +12,7 @@ jobs:
     steps:
       - checkout
       - run:
+        name: Running Unit Tests
         command: npm run unit-tests
 # Orchestrate or schedule a set of jobs
 workflows:
@@ -20,3 +21,4 @@ workflows:
     # Run the welcome/run job in its own container
     jobs:
       - unit-tests
+#166101ff24ad26700a6f8003a86c33b21d573a8b
