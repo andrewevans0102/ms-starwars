@@ -19,7 +19,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "flat-cache": "^2.0.1",
-    "mocha": "^6.2.2",
+    "mocha": "^10.2.0",
     "nodemon": "^1.19.4",
     "prettier": "^1.18.2",
     "request": "^2.88.0",
